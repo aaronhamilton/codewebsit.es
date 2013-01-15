@@ -1,3 +1,7 @@
+@headerheight:	50px;
+@ribbonoffset:	100px;
+@gutter:	16px;
+
 html {
 	height: 100%;
 }
@@ -19,8 +23,10 @@ body {
 	background-repeat: repeat-x;
 
 	#header {
-		height: 50px;
-		background: red;
+		height: @headerheight;
+		background: rgba(0,0,0,0.86);
+		position: fixed;
+		width: 100%;
 	}
 
 	#container-wrap {
@@ -37,7 +43,7 @@ body {
 				background-color: white;
 
 				.banner-center {
-					margin-top: 84px;
+					margin-top: ((@ribbonoffset - 16) +  @headerheight);
 					padding-top: 16px;
 					background-image: url('img/banner_center_noise.png');
 					height: 308px;
@@ -47,14 +53,14 @@ body {
 
 		#left-col {
 			float: left;
-			width: 16px;
+			width: @gutter;
 			margin-left: -100%;
 			display: table-cell;
 			height: 100%;
 			background-image: url('img/left-gradient.png');
 
 			#left-banner {
-				margin-top: 100px;
+				margin-top: (@ribbonoffset + @headerheight);
 				background-image: url('img/noise.png');
 				height: 272px;
 
@@ -71,13 +77,13 @@ body {
 
 		#right-col {
 			float: left;
-			width: 16px;
+			width: @gutter;
 			height: 100%;
 			margin-left: -16px;
 			background-image: url('img/right-gradient.png');
 			
 			#right-banner {
-				margin-top: 100px;
+				margin-top: (@ribbonoffset + @headerheight);
 				background-image: url('img/noise.png');
 				height: 272px;
 				
