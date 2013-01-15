@@ -12,7 +12,7 @@ body {
 #page-wrap {
   height: 100%;
   min-width: 240px;
-  background-image: url('img/redbg.png');
+  background-image: url('img/side_noise.png');
   background-repeat: repeat-x;
 }
 #page-wrap #header {
@@ -23,31 +23,58 @@ body {
   height: 100%;
   max-width: 1000px;
   margin: auto;
-  padding-bottom: 30px;
-  margin-top: -50px;
-  padding-top: 50px;
 }
 #page-wrap #container-wrap #content-wrap {
   float: left;
   width: 100%;
 }
 #page-wrap #container-wrap #content-wrap #content-col {
-  margin: 0 50px 0 50px;
+  margin: 0 16px 0 16px;
   background-color: white;
+}
+#page-wrap #container-wrap #content-wrap #content-col .banner-center {
+  margin-top: 100px;
+  background-image: url('img/banner_center_noise.png');
+  height: 272px;
 }
 #page-wrap #container-wrap #left-col {
   float: left;
-  width: 50px;
-  height: 400px;
+  width: 16px;
   margin-left: -100%;
-  background-image: url('img/bgleft.png');
+  display: table-cell;
+  height: 100%;
+  background-image: url('img/left-gradient.png');
+}
+#page-wrap #container-wrap #left-col #left-banner {
+  margin-top: 100px;
+  background-image: url('img/noise.png');
+  height: 272px;
+}
+#page-wrap #container-wrap #left-col #left-banner .top-triangle {
+  margin-bottom: 240px;
+  float: left;
+}
+#page-wrap #container-wrap #left-col #left-banner .bottom-triangle {
+  float: left;
 }
 #page-wrap #container-wrap #right-col {
   float: left;
-  width: 50px;
-  height: 400px;
-  margin-left: -50px;
-  background-image: url('img/bgright.png');
+  width: 16px;
+  height: 100%;
+  margin-left: -16px;
+  background-image: url('img/right-gradient.png');
+}
+#page-wrap #container-wrap #right-col #right-banner {
+  margin-top: 100px;
+  background-image: url('img/noise.png');
+  height: 272px;
+}
+#page-wrap #container-wrap #right-col #right-banner .top-triangle {
+  margin-bottom: 240px;
+  float: left;
+}
+#page-wrap #container-wrap #right-col #right-banner .bottom-triangle {
+  float: left;
 }
 #page-wrap #footer {
   clear: left;
