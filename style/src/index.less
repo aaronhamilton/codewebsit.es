@@ -1,3 +1,5 @@
+@headerheight: 50px;
+
 html {
 	height: 100%;
 }
@@ -19,8 +21,10 @@ body {
 	background-repeat: repeat-x;
 
 	#header {
-		height: 50px;
-		background: red;
+		height: @headerheight;
+		background: rgba(0,0,0,0.86);
+		position:fixed;
+		width:100%;
 	}
 
 	#container-wrap {
@@ -37,7 +41,7 @@ body {
 				background-color: white;
 
 				.banner-center {
-					margin-top: 84px;
+					margin-top: (84px +  @headerheight);
 					padding-top: 16px;
 					background-image: url('img/banner_center_noise.png');
 					height: 308px;
@@ -54,7 +58,7 @@ body {
 			background-image: url('img/left-gradient.png');
 
 			#left-banner {
-				margin-top: 100px;
+				margin-top: (100px + @headerheight);
 				background-image: url('img/noise.png');
 				height: 272px;
 
@@ -77,7 +81,7 @@ body {
 			background-image: url('img/right-gradient.png');
 			
 			#right-banner {
-				margin-top: 100px;
+				margin-top: (100px + @headerheight);
 				background-image: url('img/noise.png');
 				height: 272px;
 				
