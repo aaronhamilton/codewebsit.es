@@ -17,7 +17,9 @@ body {
 }
 #page-wrap #header {
   height: 50px;
-  background: red;
+  background: rgba(0, 0, 0, 0.86);
+  position: fixed;
+  width: 100%;
 }
 #page-wrap #container-wrap {
   height: 100%;
@@ -33,7 +35,7 @@ body {
   background-color: white;
 }
 #page-wrap #container-wrap #content-wrap #content-col .banner-center {
-  margin-top: 84px;
+  margin-top: 134px;
   padding-top: 16px;
   background-image: url('img/banner_center_noise.png');
   height: 308px;
@@ -47,7 +49,7 @@ body {
   background-image: url('img/left-gradient.png');
 }
 #page-wrap #container-wrap #left-col #left-banner {
-  margin-top: 100px;
+  margin-top: 150px;
   background-image: url('img/noise.png');
   height: 272px;
 }
@@ -66,7 +68,7 @@ body {
   background-image: url('img/right-gradient.png');
 }
 #page-wrap #container-wrap #right-col #right-banner {
-  margin-top: 100px;
+  margin-top: 150px;
   background-image: url('img/noise.png');
   height: 272px;
 }
