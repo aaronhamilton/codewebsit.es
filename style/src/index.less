@@ -1,6 +1,6 @@
-@headerheight: 50px;
-@ribbonheight: 100px;
-
+@headerheight:	50px;
+@ribbonheight:	100px;
+@gutter:	16px;
 
 html {
 	height: 100%;
@@ -53,7 +53,7 @@ body {
 
 		#left-col {
 			float: left;
-			width: 16px;
+			width: @gutter;
 			margin-left: -100%;
 			display: table-cell;
 			height: 100%;
@@ -77,7 +77,7 @@ body {
 
 		#right-col {
 			float: left;
-			width: 16px;
+			width: @gutter;
 			height: 100%;
 			margin-left: -16px;
 			background-image: url('img/right-gradient.png');
