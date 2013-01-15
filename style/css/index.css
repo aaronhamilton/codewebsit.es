@@ -33,9 +33,10 @@ body {
   background-color: white;
 }
 #page-wrap #container-wrap #content-wrap #content-col .banner-center {
-  margin-top: 100px;
+  margin-top: 84px;
+  padding-top: 16px;
   background-image: url('img/banner_center_noise.png');
-  height: 272px;
+  height: 308px;
 }
 #page-wrap #container-wrap #left-col {
   float: left;
